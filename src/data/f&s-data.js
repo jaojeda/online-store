@@ -12,7 +12,7 @@ const groundChuck = {
 const burgerBuns = {
     code: 'burger-buns',
     name: 'Burger Buns',
-    image: './assets/burger-bun.jpg',
+    image: './assets/burger-bun.png',
     description: 'Sesame seed buns, eight per package',
     category: 'food',
     price: 3.50,
