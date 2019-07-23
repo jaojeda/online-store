@@ -2,7 +2,7 @@
 const groundChuck = {
     code: 'gound-chuck',
     name: 'Ground Chuck',
-    image: 'assets/ground-chuck.png',
+    image: './assets/ground-chuck.png',
     description: 'Lean, ground chuck. (Does not come in patties)',
     category: 'food',
     price: 2.00,
@@ -12,7 +12,7 @@ const groundChuck = {
 const burgerBuns = {
     code: 'burger-buns',
     name: 'Burger Buns',
-    image: 'assets/burger-bun.jpg',
+    image: './assets/burger-bun.jpg',
     description: 'Sesame seed buns, eight per package',
     category: 'food',
     price: 3.50,
@@ -22,7 +22,7 @@ const burgerBuns = {
 const gardeningGloves = {
     code: 'gardening-gloves',
     name: 'Gardening Gloves',
-    image: 'assets/gardening-gloves.png',
+    image: './assets/gardening-gloves.png',
     description: 'Gloves to help with gardening',
     category: 'stuff',
     price: 10.00,
@@ -32,7 +32,7 @@ const gardeningGloves = {
 const lemonade = {
     code: 'lemonade',
     name: 'Lemonade',
-    image:  'assets/lemonade.jpg',
+    image:  './assets/lemonade.jpg',
     description: 'Lemonade, canned, twelve per pack',
     category: 'food',
     price: 3.00,
@@ -42,7 +42,7 @@ const lemonade = {
 const metalHose = {
     code: 'metal-hose',
     name: 'Metal Hose',
-    image: 'assets/metal-hose.png',
+    image: './assets/metal-hose.png',
     description: 'A hose made out of metal. Use it as intended',
     category: 'stuff',
     price: 7.00,
@@ -52,7 +52,7 @@ const metalHose = {
 const stuffedRaven = {
     code: 'stuffed-raven',
     name: 'Stuffed Raven',
-    image: 'assets/stuffed-raven.jpg',
+    image: './assets/stuffed-raven.jpg',
     description: 'A stuffed raven, medium sized. Use it as a decoration',
     category: 'stuff',
     price: 5.00,
