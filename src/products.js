@@ -1,4 +1,4 @@
-import products from './data/f&s-data.js'
+import products from './data/f&s-data.js';
 import renderProducts from './render-products.js';
 
 const list = document.getElementById('products');

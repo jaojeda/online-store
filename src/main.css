@@ -32,6 +32,11 @@ header {
     overflow-x: hidden;
 }
 
+div {
+  text-align: center;
+  display: flex;
+}
+
 .motto {
     float: right;
     text-align: right;

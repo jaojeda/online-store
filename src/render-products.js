@@ -27,7 +27,7 @@ function renderProducts(product) {
 
     li.appendChild(p);
 
-    return li
+    return li;
 }
 
 export default renderProducts;
