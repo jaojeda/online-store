@@ -1,3 +1,4 @@
+import { toUSD } from './currency.js';
 
 function renderProducts(product) {
     const li = document.createElement('li');
@@ -16,7 +17,7 @@ function renderProducts(product) {
     const p = document.createElement('p');
     p.className = 'price';
 
-    const usd = product.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    const usd = toUSD(product.price);
     const priceTextNode = document.createTextNode(usd);
     p.appendChild(priceTextNode);
 
