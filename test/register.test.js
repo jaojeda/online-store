@@ -1,6 +1,6 @@
 import products from '../src/data/f&s-data.js';
 // import order from '../src/data/order.js';
-import { findProduct } from '../src/register.js';
+import { findProduct, getLineTotal } from '../src/register.js';
 
 const test = QUnit.test;
 
@@ -24,4 +24,17 @@ test('Find Product with Code', assert => {
 
     //assert
     assert.deepEqual(foundProduct, expected);
+});
+
+test('Get line total', assert => {
+    //arrange
+    const quantity = 4;
+    const price = 2.00;
+    const expected = 8.00;
+
+    //act
+    const total = getLineTotal(quantity, price);
+
+    //assert
+    assert.equal(total, expected);
 });

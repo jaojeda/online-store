@@ -1,5 +1,6 @@
 
-function getLineTotal() {
+export function getLineTotal(quantity, price) {
+    return Number((quantity * price).toFixed(2));
 }
 
 export function findProduct(products, code) {
