@@ -2,7 +2,7 @@ import order from './data/order.js';
 import products from './data/f&s-data.js';
 import { renderLineItem } from './render-line-item.js';
 import { findProduct, getOrderTotal } from './register.js';
-import { toUSD } from  './currency.js';
+import { toUSD } from './currency.js';
 
 const tbody = document.querySelector('tbody');
 const totalDisplay = document.getElementById('order-total');
