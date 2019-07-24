@@ -1,6 +1,6 @@
 import products from '../src/data/f&s-data.js';
-// import order from '../src/data/order.js';
-import { findProduct, getLineTotal } from '../src/register.js';
+import order from '../src/data/order.js';
+import { findProduct, getLineTotal, getOrderTotal } from '../src/register.js';
 
 const test = QUnit.test;
 
@@ -37,4 +37,15 @@ test('Get line total', assert => {
 
     //assert
     assert.equal(total, expected);
+});
+
+test('Get order total', assert => {
+    //arrange
+    const expected = 19.50;
+
+    //act
+    const orderTotal = getOrderTotal(order, products);
+
+    //assert
+    assert.equal(orderTotal, expected);
 });
