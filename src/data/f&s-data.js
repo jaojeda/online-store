@@ -1,6 +1,6 @@
 
 const groundChuck = {
-    code: 'gound-chuck',
+    code: 'ground-chuck',
     name: 'Ground Chuck',
     image: './assets/ground-chuck.png',
     description: 'Lean, ground chuck. (Does not come in patties)',
