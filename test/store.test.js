@@ -53,4 +53,34 @@ test('add orders to shopping cart', assert => {
 
     //assert
     assert.deepEqual(shoppingCart, expected);
+});
+
+test('add multiple of the same item on the cart', assert => {
+    //arrange
+    const code = 'ground-chuck';
+    const expected = [{
+        code: 'ground-chuck',
+        quantity: 2,
+    }];
+
+    //act
+    store.orderProduct(code);
+    store.orderProduct(code);
+    const shoppingCart = store.getShoppingCart();
+
+    //assert
+    assert.deepEqual(shoppingCart, expected);
+});
+
+test('get product from inventory', assert => {
+    //arrange  
+    const code = 'ground-chuck';
+    const expected = products[0];
+    
+    
+    //act
+    const product = store.getProduct(code);
+
+    //act
+    assert.deepEqual(product, expected);
 })

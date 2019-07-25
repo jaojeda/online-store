@@ -41,7 +41,13 @@ const store = {
             shoppingCart.push(addedItem);
         }
         store.save('shoppingList', shoppingCart);
-    },  
+    },
+    getProduct(code) {
+        const products = store.getProducts();
+        const product = findProduct(products, code);
+        return product;
+    }
+    
 };
 
 export default store;

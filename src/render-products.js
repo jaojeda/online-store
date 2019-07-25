@@ -1,4 +1,5 @@
 import { toUSD } from './currency.js';
+import store from './data/store.js';
 
 function renderProducts(product) {
     const li = document.createElement('li');
@@ -24,6 +25,9 @@ function renderProducts(product) {
     const button = document.createElement('button');
     button.textContent = 'Add';
     button.value = product.code;
+    button.addEventListener('click', () => {
+        store.orderProduct(product.code);
+    });
     p.appendChild(button);
 
     li.appendChild(p);

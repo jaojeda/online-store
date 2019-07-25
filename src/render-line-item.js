@@ -10,6 +10,7 @@ function renderLineItem(lineItem, product) {
     tr.appendChild(quantityCell);
 
     const nameCell = document.createElement('td');
+    console.log('product', product);
     nameCell.textContent = product.name;
     tr.appendChild(nameCell);
 
