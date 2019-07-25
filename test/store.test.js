@@ -83,4 +83,4 @@ test('get product from inventory', assert => {
 
     //act
     assert.deepEqual(product, expected);
-})
+});
