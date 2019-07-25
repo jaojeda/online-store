@@ -1,4 +1,5 @@
 import products from '../data/f&s-data.js';
+import { findProduct } from '../register.js';
 
 const store = {
     storage: window.localStorage,
@@ -25,7 +26,22 @@ const store = {
             shoppingCart = [];
         }
         return shoppingCart;
-    }
+    },
+    orderProduct(code) {
+        const shoppingCart = store.getShoppingCart();
+        const addedItem = findProduct(shoppingCart, code);
+        if(addedItem) {
+            addedItem.quantity++;
+        }
+        else {
+            const addedItem = {
+                code: code,
+                quantity: 1,
+            };
+            shoppingCart.push(addedItem);
+        }
+        store.save('shoppingList', shoppingCart);
+    },  
 };
 
 export default store;
