@@ -19,7 +19,13 @@ const store = {
         }
         return inventory;
     },
-
+    getShoppingCart() {
+        let shoppingCart = store.get('shoppingList');
+        if(!shoppingCart) {
+            shoppingCart = [];
+        }
+        return shoppingCart;
+    }
 };
 
 export default store;

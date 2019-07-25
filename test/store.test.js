@@ -30,3 +30,11 @@ test('am i storing the inventory into storage', assert => {
     //assert
     assert.deepEqual(productInventory, products);
 });
+
+test('im returning an empty shopping cart', assert => {
+    //act
+    const shoppingCart = store.getShoppingCart();
+
+    //assert
+    assert.deepEqual(shoppingCart, []);
+});
