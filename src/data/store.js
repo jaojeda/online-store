@@ -1,3 +1,4 @@
+import products from '../data/f&s-data.js';
 
 const store = {
     storage: window.localStorage,
@@ -9,7 +10,16 @@ const store = {
         const json = store.storage.getItem(key);
         const product = JSON.parse(json);
         return product;
-    }
+    },
+    getProducts() {
+        let inventory = store.get('inventoryKey');
+        if(!inventory) {
+            store.save('inventoryKey', products);
+            inventory = products;
+        }
+        return inventory;
+    },
+
 };
 
 export default store;

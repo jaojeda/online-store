@@ -1,4 +1,5 @@
 import store from '../src/data/store.js';
+import products from '../src/data/f&s-data.js';
 
 const test = QUnit.test;
 
@@ -10,7 +11,7 @@ QUnit.testStart(() => {
     store.storage.clear();
 });
 
-test('to i get the same object', assert => {
+test('do i get the same object', assert => {
     //arrange
     const car = { make: 'dodge ' };
     const key = 'car';  
@@ -21,5 +22,11 @@ test('to i get the same object', assert => {
 
     //assert
     assert.deepEqual(expected, car);
+});
 
+test('am i storing the inventory into storage', assert => {
+    //act
+    const productInventory = store.getProducts();
+    //assert
+    assert.deepEqual(productInventory, products);
 });
