@@ -81,6 +81,26 @@ test('get product from inventory', assert => {
     //act
     const product = store.getProduct(code);
 
-    //act
+    //assert
     assert.deepEqual(product, expected);
+});
+
+test('add new product to inventory', assert => {
+    //arrange
+    const product = {
+        code: 'gardening-shears',
+        name: 'Gardening Shears',
+        image: './assets/gardening-shears.png',
+        description: 'Shears meant for gardening',
+        category: 'stuff',
+        price: 13.00,
+        cost: 6.00,
+    }
+
+
+    //act
+    store.addProduct(product);
+    const products = store.getProducts();
+    //assert
+    assert.deepEqual(products[products.length - 1], product);
 });

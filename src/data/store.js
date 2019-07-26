@@ -46,7 +46,13 @@ const store = {
         const products = store.getProducts();
         const product = findProduct(products, code);
         return product;
-    }
+    },
+
+    addProduct(product) {
+        const products = store.getProducts();
+        products.push(product);
+        store.save('inventoryKey', products);
+    },
     
 };
 
