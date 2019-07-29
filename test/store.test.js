@@ -95,7 +95,7 @@ test('add new product to inventory', assert => {
         category: 'stuff',
         price: 13.00,
         cost: 6.00,
-    }
+    };
 
 
     //act
