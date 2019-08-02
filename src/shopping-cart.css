@@ -1,0 +1,22 @@
+
+table {
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #aaa;
+}
+
+.align-right {
+    text-align: right;
+}
+
+thead {
+    background: #16588E;
+    color: white;
+}
+
+tfoot {
+    background: #525960;
+    color: white;
+}

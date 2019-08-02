@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Entry</title>
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="./src/product-entry.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./assets/logo.png" alt="food and stuff logo">
+            <div class="motto">
+                <p><em>"Where you can get your food, and most of your stuff."</em></p>
+            </div>
+                <nav class="topnav">
+                    <a href="./">Home</a>
+                    <a href="./products.html">Our Products</a>
+                    <a href="./shopping-cart.html">Shopping Cart</a>
+                </nav>
+    </header>
+    <h2>Add New Products</h2>
+    <form id="new-product-form">
+        <p>
+            <label for="code">Code:</label>
+            <input type="text" id="code" name="code" required>
+        </p>
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" required>
+        </p>
+        <p>
+            <label for="description">Description:</label>
+            <textarea name="description" id="description" cols="30" rows="5"></textarea>
+        </p>
+        <p>
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required>
+        </p>
+        <p>
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" step=".01" required>
+        </p>
+        <p>
+            <label for="cost">Cost:</label>
+            <input type="number" id="cost" name="cost" step=".01" required>
+        </p>
+        <p>
+            <button>Add Product</button>
+        </p>
+    </form>
+    <script src="./src/product-entry.js" type="module"></script>
+</body>
+</html>

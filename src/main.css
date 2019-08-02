@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Source+Sans+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #525960;
+  }
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: #525960;
+  }
+  
+.topnav a.active {
+    background-color: #525960;
+    color: white;
+  }
+
+header {
+    overflow-x: hidden;
+}
+
+div {
+  text-align: center;
+  display: flex;
+}
+
+.motto {
+    float: right;
+    text-align: right;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+    height: 100%;
+}
+
+.logo {
+    background-color: #16588E;
+    width: 25%;
+    height: auto;
+}
